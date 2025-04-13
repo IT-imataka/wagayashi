@@ -557,7 +557,7 @@ footer p {
     flex-direction: column;
     padding-inline: 2%;
     background-color: #5a4c2999;
-    position: fixed;
+    position: absolute;
     top: 0;
     height: 100vh;
     z-index: 9999;
