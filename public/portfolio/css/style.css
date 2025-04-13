@@ -665,7 +665,7 @@ footer p {
   .area {
     background-color: #fbf6d8;
     display: flex;
-    /* align-items: flex-start; */
+    /* align-items: flex-start;  */
     justify-content: center;
   }
   .area .text {
