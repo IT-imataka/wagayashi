@@ -178,7 +178,7 @@ h2 {
 #gnav {
   background-color: #5a4c2999;
   padding: 20px 1.25%;
-  position: absolute;
+  position: sticky;
   top: 0;
   right: 0;
   z-index: 9999;
