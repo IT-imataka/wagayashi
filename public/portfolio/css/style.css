@@ -9,11 +9,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-html,
-body {
-  margin: 0;
-  padding: 0;
-}
 
 body {
   font-family: "Kaisei Opti", serif;
@@ -77,6 +72,8 @@ header {
 .sns {
   display: flex;
   transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 0;
 }
 .sns li {
   width: 40px;
@@ -812,15 +809,19 @@ footer p {
     padding-inline: 0;
   }
 }
+/* 一時的なデバッグCSS */
+/* 位置確認用 
 
 header {
-  background: rgba(255, 0, 0, 0.2); /* 位置確認用 */
-}
+  background: rgba(255, 0, 0, 0.2);
+} */
 
-.sns {
-  background: rgba(0, 255, 0, 0.2); /* SNSブロックの確認用 */
+/* SNSブロックの確認用 
+ .sns {
+  background: rgba(0, 255, 0, 0.2);
   outline: 1px solid lime;
-}
+} */
+
 /* 
 body::before {
   content: "";
