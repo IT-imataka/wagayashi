@@ -369,7 +369,7 @@ h2 span {
 .cart_box {
   align-self: flex-end;
   background-color: #fbf6d8;
-  padding: 2%;
+  padding: 0.5%;
   text-align: center;
 }
 
@@ -687,7 +687,7 @@ footer p {
   .cart_box {
     width: 10%;
     position: absolute;
-    top: -25px;
+    top: -20px;
     right: 20%;
     border-radius: 50%;
   }
