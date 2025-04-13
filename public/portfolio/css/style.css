@@ -759,8 +759,8 @@ footer p {
     padding-inline: 15%;
   }
   .area {
-    /* height: fit-content; */
-    display: inline-block;
+    height: 100%;
+    /* display: inline-block; */
     padding-bottom: 20px;
   }
   .area .imgbox {
@@ -832,3 +832,9 @@ body::before {
   height: 10px;
   background: blue;
 } */
+body::after {
+  content: "";
+  display: block;
+  height: 10px;
+  background: red;
+}
