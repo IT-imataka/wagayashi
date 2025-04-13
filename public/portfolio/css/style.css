@@ -550,7 +550,7 @@ footer p {
 
 @media (max-width: 910px) {
   header {
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     /* position: relative; */
   }
   .sns {
