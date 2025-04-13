@@ -766,7 +766,7 @@ footer p {
   }
   .area {
     /* height: fit-content; */
-    max-height: 100vh;
+    max-width: 100vh;
     padding-bottom: 20px;
   }
   .area .imgbox {
