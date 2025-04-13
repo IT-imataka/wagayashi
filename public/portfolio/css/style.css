@@ -764,12 +764,14 @@ footer p {
 @media (max-width: 768px) {
   h2 {
     margin-inline: 5%;
-    writing-mode: initial;
-    -webkit-writing-mode: initial;
   }
   #natural .wrap {
     padding-inline: 15%;
     height: 100vh;
+  }
+  #natural h2 {
+    writing-mode: initial;
+    -webkit-writing-mode: initial;
   }
   .area {
     /* height: fit-content; */
