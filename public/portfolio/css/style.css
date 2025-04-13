@@ -812,3 +812,19 @@ footer p {
     padding-inline: 0;
   }
 }
+
+header {
+  background: rgba(255, 0, 0, 0.2); /* 位置確認用 */
+}
+
+.sns {
+  background: rgba(0, 255, 0, 0.2); /* SNSブロックの確認用 */
+  outline: 1px solid lime;
+}
+
+body::before {
+  content: "";
+  display: block;
+  height: 10px;
+  background: blue;
+}
