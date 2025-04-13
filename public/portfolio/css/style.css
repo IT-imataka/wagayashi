@@ -773,7 +773,7 @@ footer p {
     padding-bottom: 20px;
   }
   .area .imgbox {
-    position: initial;
+    position: inherit;
     top: auto;
     right: auto;
     width: auto;
