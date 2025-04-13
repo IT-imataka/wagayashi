@@ -759,7 +759,7 @@ footer p {
     padding-inline: 15%;
   }
   .area {
-    height: fit-content;
+    /* height: fit-content; */
     padding-bottom: 20px;
   }
   .area .imgbox {
