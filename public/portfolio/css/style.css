@@ -659,7 +659,7 @@ footer p {
     padding-inline: 10%;
   }
   .wrap {
-    flex-direction: column;
+    /* flex-direction: column; */
     position: relative;
   }
   .area {
