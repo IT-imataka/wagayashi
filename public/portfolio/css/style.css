@@ -664,9 +664,11 @@ footer p {
   }
   .area {
     background-color: #fbf6d8;
-    display: flex;
+    writing-mode: initial;
+    -webkit-writing-mode: initial;
+    /* display: flex; */
     /* align-items: flex-start;  */
-    justify-content: center;
+    /* justify-content: center; */
   }
   .area .text {
     width: auto;
