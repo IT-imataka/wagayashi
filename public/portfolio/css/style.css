@@ -671,7 +671,7 @@ footer p {
   .area .text {
     width: auto;
     padding: 0;
-    max-height: 80vh;
+    /* max-height: 80vh; */
   }
   .area .imgbox {
     width: 70%;
@@ -764,6 +764,7 @@ footer p {
   }
   #natural .wrap {
     padding-inline: 15%;
+    height: 100vh;
   }
   .area {
     height: fit-content;
