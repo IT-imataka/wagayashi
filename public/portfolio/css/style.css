@@ -760,7 +760,7 @@ footer p {
   }
   .area {
     /* height: fit-content; */
-    max-height: 100vh;
+    display: inline-block;
     padding-bottom: 20px;
   }
   .area .imgbox {
