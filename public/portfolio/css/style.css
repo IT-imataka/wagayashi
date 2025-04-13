@@ -156,6 +156,10 @@ header {
 h2 {
   writing-mode: vertical-rl;
   -webkit-writing-mode: vertical-rl;
+  overflow-wrap: break-word;
+  max-height: 100vh; /* ← これで縦方向への制御 */
+  max-width: 100vw; /* ← 横方向にも制限 */
+  overflow: hidden;
 }
 
 .catch {
