@@ -671,7 +671,8 @@ footer p {
   .area .text {
     width: auto;
     padding: 0;
-    /* max-height: 80vh; */
+    max-height: 80vh;
+    overflow: auto;
   }
   .area .imgbox {
     width: 70%;
