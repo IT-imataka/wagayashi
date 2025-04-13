@@ -155,6 +155,7 @@ header {
 .detail,
 h2 {
   writing-mode: vertical-rl;
+  -webkit-writing-mode: vertical-rl;
 }
 
 .catch {
@@ -724,7 +725,6 @@ footer p {
   }
   .pbox .buy {
     writing-mode: vertical-rl;
-    -webkit-writing-mode: vertical-rl;
     margin-block: auto;
   }
   #feature .wrap,
