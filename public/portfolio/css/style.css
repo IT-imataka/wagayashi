@@ -72,8 +72,6 @@ header {
 .sns {
   display: flex;
   transition: all 0.2s ease-in-out;
-  position: absolute;
-  top: 0;
 }
 .sns li {
   width: 40px;
@@ -552,12 +550,14 @@ footer p {
 @media (max-width: 910px) {
   header {
     overflow-x: hidden;
+    /* position: relative; */
   }
   .sns {
     flex-direction: column;
     padding-inline: 2%;
     background-color: #5a4c2999;
-    position: fixed;
+    position: absolute;
+    top: 0;
     height: 100vh;
     z-index: 9999;
   }
