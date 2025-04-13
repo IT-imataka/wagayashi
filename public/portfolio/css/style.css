@@ -158,7 +158,7 @@ h2 {
   -webkit-writing-mode: vertical-rl;
   overflow-wrap: break-word;
   /* max-height: 100vh; ← これで縦方向への制御 */
-  max-width: 100vw; /* ← 横方向にも制限 */
+  /* max-width: 100vw; ← 横方向にも制限 */
   overflow: hidden;
 }
 
@@ -659,7 +659,7 @@ footer p {
     padding-inline: 10%;
   }
   .wrap {
-    /* flex-direction: column; */
+    flex-direction: column;
     position: relative;
   }
   .area {
