@@ -44,7 +44,7 @@ const nh = natural.getBoundingClientRect().top;
 console.log(nh);
 
 window.addEventListener("scroll", userscroll);
-window.addEventListener("scroll", nf);
+// window.addEventListener("scroll", nf);
 
 // function nf() {
 //   if ((Yscroll > nh - window, innerHeight)) {
