@@ -179,6 +179,7 @@ h2 {
   background-color: #5a4c2999;
   padding: 20px 1.25%;
   position: absolute;
+  top: 0;
   right: 0;
   z-index: 9999;
   height: 100vh;
