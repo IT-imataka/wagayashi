@@ -9,6 +9,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
 
 body {
   font-family: "Kaisei Opti", serif;
@@ -155,11 +160,6 @@ header {
 .detail,
 h2 {
   writing-mode: vertical-rl;
-  -webkit-writing-mode: vertical-rl;
-  /* overflow-wrap: break-word; */
-  /* max-height: 100vh; ← これで縦方向への制御 */
-  /* max-width: 100vw; ← 横方向にも制限 */
-  /* overflow: hidden; */
 }
 
 .catch {
@@ -184,7 +184,6 @@ h2 {
   background-color: #5a4c2999;
   padding: 20px 1.25%;
   position: fixed;
-  top: 0;
   right: 0;
   z-index: 9999;
   height: 100vh;
@@ -374,7 +373,7 @@ h2 span {
 .cart_box {
   align-self: flex-end;
   background-color: #fbf6d8;
-  padding: 0.5%;
+  padding: 2%;
   text-align: center;
 }
 
@@ -555,15 +554,13 @@ footer p {
 
 @media (max-width: 910px) {
   header {
-    /* overflow-x: hidden; */
-    /* position: relative; */
+    overflow-x: hidden;
   }
   .sns {
     flex-direction: column;
     padding-inline: 2%;
     background-color: #5a4c2999;
-    position: absolute;
-    top: 0;
+    position: fixed;
     height: 100vh;
     z-index: 9999;
   }
@@ -664,17 +661,11 @@ footer p {
   }
   .area {
     background-color: #fbf6d8;
-    writing-mode: initial;
-    -webkit-writing-mode: initial;
-    /* display: flex; */
-    /* align-items: flex-start;  */
-    /* justify-content: center; */
+    display: flex;
   }
   .area .text {
     width: auto;
     padding: 0;
-    /* max-height: 80vh;
-    overflow: auto; */
   }
   .area .imgbox {
     width: 70%;
@@ -696,7 +687,7 @@ footer p {
     margin-left: 20px;
   }
   .cart_box {
-    width: 10%;
+    width: 100px;
     position: absolute;
     top: -25px;
     right: 20%;
@@ -767,15 +758,9 @@ footer p {
   }
   #natural .wrap {
     padding-inline: 15%;
-    height: 100vh;
-  }
-  #natural h2 {
-    writing-mode: initial;
-    -webkit-writing-mode: initial;
   }
   .area {
-    /* height: fit-content; */
-    /* max-width: 100vw; */
+    height: fit-content;
     padding-bottom: 20px;
   }
   .area .imgbox {
@@ -827,19 +812,17 @@ footer p {
     padding-inline: 0;
   }
 }
-/* 一時的なデバッグCSS */
-/* 位置確認用 
+
+/* デバック用 */
 
 header {
-  background: rgba(255, 0, 0, 0.2);
-} */
+  background: rgba(255, 0, 0, 0.2); /* 位置確認用 */
+}
 
-/* SNSブロックの確認用 
- .sns {
-  background: rgba(0, 255, 0, 0.2);
+.sns {
+  background: rgba(0, 255, 0, 0.2); /* SNSブロックの確認用 */
   outline: 1px solid lime;
-} */
-
+}
 /* 
 body::before {
   content: "";
@@ -847,13 +830,3 @@ body::before {
   height: 10px;
   background: blue;
 } */
-* {
-  outline: 1px solid rgba(255, 0, 0, 0.2);
-}
-
-body::after {
-  content: "";
-  display: block;
-  height: 10px;
-  background: red;
-}
