@@ -41,11 +41,11 @@ const htop = document.getElementById("top");
 const hh = htop.getBoundingClientRect().height;
 const natural = document.getElementById("natural");
 const nh = natural.getBoundingClientRect().top;
-// console.log(nh);
+console.log(nh);
 
 function userscroll() {
   const Yscroll = document.documentElement.scrollTop;
-  // console.log(Yscroll);
+  console.log(Yscroll);
   const uscroll = window.innerHeight + Yscroll;
   // const Yscrolluh = document.documentElement.scrollHeight - window.innerHeight - window.pageYOffset;
   if (uscroll > hh) {
