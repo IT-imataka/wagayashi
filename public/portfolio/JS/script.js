@@ -41,7 +41,26 @@ const htop = document.getElementById("top");
 const hh = htop.getBoundingClientRect().height;
 const natural = document.getElementById("natural");
 const nh = natural.getBoundingClientRect().top;
-console.log(nh);
+// console.log(nh);
+
+function userscroll() {
+  const Yscroll = document.documentElement.scrollTop;
+  // console.log(Yscroll);
+  const uscroll = window.innerHeight + Yscroll;
+  // const Yscrolluh = document.documentElement.scrollHeight - window.innerHeight - window.pageYOffset;
+  if (uscroll > hh) {
+    gnav.classList.add("scroll");
+    children.classList.add("scroll");
+    if (uscroll > nh) {
+      sns.classList.add("scroll");
+    } else if (uscroll < nh) {
+      sns.classList.remove("scroll");
+    }
+  } else if (uscroll < hh) {
+    gnav.classList.remove("scroll");
+    children.classList.remove("scroll");
+  }
+}
 
 window.addEventListener("scroll", userscroll);
 // window.addEventListener("scroll", nf);
@@ -58,24 +77,6 @@ window.addEventListener("scroll", userscroll);
 //   }
 // }
 
-function userscroll() {
-  const Yscroll = document.documentElement.scrollTop;
-  console.log(Yscroll);
-  const uscroll = window.innerHeight + Yscroll;
-  // const Yscrolluh = document.documentElement.scrollHeight - window.innerHeight - window.pageYOffset;
-  if (uscroll > hh) {
-    gnav.classList.add("scroll");
-    children.classList.add("scroll");
-    if (uscroll > nh) {
-      sns.classList.add("scroll");
-    } else if (uscroll < nh) {
-      sns.classList.remove("scroll");
-    }
-  } else if (uscroll < hh) {
-    gnav.classList.remove("scroll");
-    children.classList.remove("scroll");
-  }
-}
 // 一番下までスクロールした時のuserscrollの処理
 // if (Yscroll > fh - window.innerHeight) {
 //   gnav.classList.add("scroll");
