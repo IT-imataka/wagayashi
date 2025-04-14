@@ -41,26 +41,11 @@ const htop = document.getElementById("top");
 const hh = htop.getBoundingClientRect().height;
 const natural = document.getElementById("natural");
 const nh = natural.getBoundingClientRect().top;
-console.log(nh);
-
-window.addEventListener("scroll", userscroll);
-window.addEventListener("scroll", nf);
-
-// function nf() {
-//   if ((Yscroll > nh - window, innerHeight)) {
-//     gnav.classList.add("nscroll");
-//     children.classList.add("nscroll");
-//     sns.classList.add("nscroll");
-//   } else {
-//     gnav.classList.remove("nscroll");
-//     children.classList.remove("nscroll");
-//     sns.classList.remove("nscroll");
-//   }
-// }
+// console.log(nh);
 
 function userscroll() {
   const Yscroll = document.documentElement.scrollTop;
-  console.log(Yscroll);
+  // console.log(Yscroll);
   const uscroll = window.innerHeight + Yscroll;
   // const Yscrolluh = document.documentElement.scrollHeight - window.innerHeight - window.pageYOffset;
   if (uscroll > hh) {
@@ -76,6 +61,22 @@ function userscroll() {
     children.classList.remove("scroll");
   }
 }
+
+window.addEventListener("scroll", userscroll);
+// window.addEventListener("scroll", nf);
+
+// function nf() {
+//   if ((Yscroll > nh - window, innerHeight)) {
+//     gnav.classList.add("nscroll");
+//     children.classList.add("nscroll");
+//     sns.classList.add("nscroll");
+//   } else {
+//     gnav.classList.remove("nscroll");
+//     children.classList.remove("nscroll");
+//     sns.classList.remove("nscroll");
+//   }
+// }
+
 // 一番下までスクロールした時のuserscrollの処理
 // if (Yscroll > fh - window.innerHeight) {
 //   gnav.classList.add("scroll");
