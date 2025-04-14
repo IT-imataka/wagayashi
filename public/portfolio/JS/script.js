@@ -55,6 +55,8 @@ function userscroll() {
       sns.classList.add("scroll");
     } else if (uscroll < nh) {
       sns.classList.remove("scroll");
+    } else if (Yscroll === nh) {
+      gnav.classList.add("disappear");
     }
   } else if (uscroll < hh) {
     gnav.classList.remove("scroll");
