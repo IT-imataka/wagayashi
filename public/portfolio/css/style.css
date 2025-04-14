@@ -813,6 +813,8 @@ footer p {
   }
 }
 
+/* デバック用 */
+
 header {
   background: rgba(255, 0, 0, 0.2); /* 位置確認用 */
 }
