@@ -41,7 +41,7 @@ footer {
 section {
   max-width: 100%;
   /* height: 100vh; */
-  margin-top: 100px;
+  margin-top: 60px;
 }
 
 .wrap {
@@ -768,7 +768,7 @@ footer p {
   }
   #natural .wrap {
     padding-inline: 15%;
-    height: 100vh;
+    /* height: 100vh;  */
   }
   #natural h2 {
     writing-mode: initial;
