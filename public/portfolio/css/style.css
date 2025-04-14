@@ -769,7 +769,7 @@ footer p {
 }
 @media (max-width: 768px) {
   h2 {
-    margin-inline: 5%;
+    margin-inline: 2.5%;
   }
   #natural .wrap {
     padding-inline: 15%;
@@ -778,7 +778,7 @@ footer p {
   #natural h2 {
     writing-mode: initial;
     -webkit-writing-mode: initial;
-    font-size: 1.8rem;
+    font-size: 1.75rem;
   }
   .area {
     /* height: fit-content; */
