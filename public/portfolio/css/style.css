@@ -684,7 +684,9 @@ footer p {
     width: 70%;
     right: 30%;
   }
-
+  #natural h2 br {
+    display: inline;
+  }
   .slidebox,
   #news .box {
     margin-inline: 4%;
