@@ -778,6 +778,7 @@ footer p {
   #natural h2 {
     writing-mode: initial;
     -webkit-writing-mode: initial;
+    font-size: 1.8rem;
   }
   .area {
     /* height: fit-content; */
